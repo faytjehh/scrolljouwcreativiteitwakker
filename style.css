@@ -1,0 +1,549 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home{
+    background-color: #F7C4E3;
+}
+
+header{
+    position: relative;
+}
+
+@font-face {
+    font-family:pixel_operator ;
+    src:url(pixel_operator/PixelOperator8.ttf)
+}
+.blogpost{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-style: bold;
+    font-size: 70px;
+    position: relative;
+    margin-left: 20px;
+    top: 70px;
+}
+
+.scrollwakker{
+    font-family: 'pixel_operator';
+    font-size: 160px;
+    position: relative;
+    top: 50px;
+    margin: 0;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.jouwcreativiteit{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+    font-size: 80px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    line-height: 1,5;
+    margin-left: 30px;
+}
+
+header img{
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    top: 40px;
+    left: 0;
+    z-index: -1;
+}
+
+.ster1{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    right: 340px;
+    top: 200px;
+}
+
+.ster2{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 240px;
+    top: 160px;
+}
+
+.wolk1{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 90px;
+    top: 180px;
+}
+
+.wolk2{
+    width: 180px;
+    height: auto;
+    position: absolute;
+    right: 180px;
+    top: 230px;
+}
+
+.ster3{
+    width: 90px;
+    height: auto;
+    position: absolute;
+    right: 80px;
+    top: 280px;
+}
+
+.blogbalk{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 450px;
+}
+
+.lexiconbalk{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 550px;
+}
+
+.bronnenbalk{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 650px;
+}
+
+.blogpagina{
+    background-color: #F7962F;
+}
+
+.menu{
+    position: relative;
+    width: 250px;
+}
+
+.menubalk{
+    width: 1400px;
+    height: auto;
+    display: block;
+    position:absolute;
+    left: 0px;
+}
+
+.menubalk ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.homeknop{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+}
+
+li:has(.homeknop:hover) .HOME {
+    opacity: 1;
+}
+
+.HOME{
+    font-family: "pixel_operator";
+    font-size: 50px;
+    position: absolute;
+    top: 240px;
+    left: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blogknop{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 115px;
+    left: 350px;  
+}
+
+.BLOG{
+    font-family: "pixel_operator";
+    font-size: 50px;
+    position: absolute;
+    top: 240px;
+    left: 330px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+li:has(.blogknop:hover) .BLOG {
+    opacity: 1;
+}
+
+.lexiconknop{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 115px;
+    left: 650px;  
+}
+
+.LEXICON{
+   font-family: "pixel_operator";
+   font-size: 50px;
+   position: absolute;
+   top: 240px;
+   left: 580px;
+   opacity: 0;
+   transition: opacity 0.3s ease; 
+}
+
+li:has(.lexiconknop:hover) .LEXICON {
+    opacity: 1;
+}
+
+.bronnenknop{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 115px;
+    left: 950px;  
+}
+
+.BRONNEN{
+    font-family: "pixel_operator";
+    font-size: 50px;
+    position: absolute;
+    top: 240px;
+    left: 870px;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+li:has(.bronnenknop:hover) .BRONNEN {
+    opacity: 1;
+}
+
+.pijlen{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 115px;
+    left: 1200px; 
+    transform: rotate(180deg);
+}
+
+.JOUWWAKKER{
+    font-family: "pixel_operator";
+    position: relative;
+    font-size: 120px;
+    top: 400px;
+    left: 100px;
+    line-height: 1;
+    margin: 0;
+    color: #18145E;
+}
+
+.CREATIVITEIT{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    font-size: 120px;
+    top: 400px;
+    left: 100px;
+    line-height: 1,2;
+    margin: 0;
+    color: #18145E;
+}
+
+.hand{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    right: 50px;
+}
+
+.introblog{
+    max-width: 1200px;
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.intro1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: 450px;
+    color: #18145E;
+}
+
+.intro2{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   position: relative;
+   top: 490px; 
+   color: #18145E;
+}
+
+.blogtekst1{
+    max-width: 1200px;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.vak1blog{
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    margin: 0;
+    top: 550px;
+}
+
+.internetencrea{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: #18145E;
+    position: relative;
+    top: 550px;
+    left: 40px;
+}
+
+.tekst1blog{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #18145E;
+    position: relative;
+    top: 600px;
+    left: 30px;
+    width: 900px;
+}
+
+.creabar{
+    width: 220px;
+    height: auto;
+    position: absolute;
+    left: 1050px;
+    top: 650px;
+}
+
+.blogtekst2{
+    max-width: 1200px;
+    height: auto;
+    position: relative;
+    left: 50px;
+}
+
+.brein{
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: 450px;
+}
+
+.blah1{
+    font-family: "pixel_operator";
+    font-size: 40px;
+    position: relative;
+    top: 1000px;
+    left: 110px;
+}
+
+.blah2{
+    font-family: "pixel_operator";
+    font-size: 30px;
+    position: relative;
+    top: 850px;
+    left: 20px;
+}
+
+.blah3{
+    font-family: "pixel_operator";
+    font-size: 20px;
+    position: relative;
+    top: 720px;
+    left: 100px;
+}
+
+.lime{
+    width: 900px;
+    height: auto;
+    position: relative;
+    top: 500px;
+    left: 130px;
+}
+
+.nietminder{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #18145E;
+    position: relative;
+    top: -110px;
+    left: 360px;
+    width: 400px;
+}
+
+.tekst2blog1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: -105px;
+    left: 360px;
+    width: 820px;
+    color: #18145E;
+
+}
+
+.tekst2blog2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: -90px;
+    left: 360px;
+    width: 820px;
+    color: #18145E;
+}
+
+.tekst2blog3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: -75px;
+    left: 360px;
+    width: 820px;
+    color: #18145E;
+}
+
+.muis1{
+    width: 70px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.naarboven{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.BOVEN{
+    font-family: "pixel_operator";
+    font-size: 20px;
+    color: #18145E;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer{
+    background-color: #B42B89;
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin-top: auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+footer img{
+    width: 500px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    margin: 20px;
+}
+
+.lexiconpagina{
+    background-color: #C3CF3F;
+}
+
+.titellexicon{
+    margin-top: 300px;
+}
+
+.EEN{
+    font-family: "pixel_operator";
+    color: #18145E;
+    font-size: 120px;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.CREATIEVER{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 120px;
+    color: #18145E;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.INTERNET{
+    font-family: "pixel_operator";
+    color: #18145E;
+    font-size: 120px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.titelslexicon{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: #18145E;
+    margin-left: 40px;
+}
+
+.tekstlexicon{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #18145E;
+    width: 800px;
+    margin-left: 40px;
+}
+
+.donkerblauwtekstvak{
+    width: 30%;
+    position: absolute;
+    top: 920px;
+    right: 5%;
+    opacity: 75%;
+}
+
+.bronnenpagina{
+    background-color: #C79FDD;
+}
+
+.headerbronnen{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.film{
+    width: 30%;
+    height: auto;
+}
+
+.oranje1{
+    width: 30%;
+    height: auto;
+}
+
+.oranje2{
+    width: 30%;
+    height: auto;
+}
+
