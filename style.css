@@ -1,0 +1,628 @@
+@font-face{
+    font-family:pixel_operator;
+    src:url(pixel_operator/PixelOperator8.ttf)
+}
+
+body{
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* ---------- lettertypes ---------- */
+
+.blogpost,.jouwcreativiteit,.CREATIVITEIT,.CREATIEVER,.internetencrea,.nietminder,.titelslexicon{
+    font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+
+.scrollwakker,.JOUWWAKKER,.EEN{
+    font-family:pixel_operator;
+    line-height:1;
+    margin:0;
+}
+
+.videotitel,.documentairetitel,.podcasttitel,.liedjestitel,.albumtitel,.klik1,.klik2,.klik3{
+    font-family:"Arial Black",Arial,sans-serif;
+    font-weight:900;
+}
+
+/* ---------- vensters (achtergrond is de afbeelding) ---------- */
+
+.BlogGroot,.vak1blog,.lime{
+    display:flow-root;
+    box-sizing:border-box;
+    aspect-ratio:2324/1577;
+    background-position:center;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+
+/* ---------- home ---------- */
+
+.home{
+    background-color:#F7C4E3;
+}
+
+.BlogGroot{
+    width:950px;
+    margin-top:40px;
+    padding:0 20px;
+    background-image:url("afbeeldingen web/terquoise.png");
+}
+
+.blogpost{
+    color:white;
+    font-size:70px;
+    margin: 20px 0 50px;
+}
+
+.scrollwakker{
+    font-size:150px;
+    color: #18145E;
+}
+
+.jouwcreativiteit{
+    display:block;
+    font-size:80px;
+    font-weight:400;
+    margin:16px 0;
+    color: #18145E;
+}
+
+.ster1,.ster2,.ster3,.wolk1,.wolk2,.blogbalk,.lexiconbalk,.bronnenbalk{
+    position:absolute;
+}
+
+.ster1{
+    width:70px;
+    right:340px;
+    top:100px;
+}
+
+.ster2{
+    width:50px;
+    right:240px;
+    top:60px;
+}
+
+.wolk1{
+    width:100px;
+    right:90px;
+    top:80px;
+}
+
+.wolk2{
+    width:180px;
+    right:180px;
+    top:130px;
+}
+
+.ster3{
+    width:90px;
+    right:80px;
+    top:180px;
+}
+
+.blogbalk,.lexiconbalk,.bronnenbalk{
+    width:400px;
+    right:20px;
+}
+
+.blogbalk{
+    top:350px;
+}
+
+.lexiconbalk{
+    top:450px;
+}
+
+.bronnenbalk{
+    top:550px;
+}
+
+/* ---------- menu ---------- */
+/* dicht = blokje "MENU", open = menubalk. Het menu ligt altijd over de pagina heen, */
+/* daardoor wordt de pagina niet groter of kleiner als het menu opent. */
+
+.menu{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+#menu_openen{
+    display:none;
+}
+
+.menubalk{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:1400px;
+}
+
+.menu ul{
+    display:none;
+    position:absolute;
+    top:110px;
+    left:50px;
+    gap:140px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.menu li{
+    position:relative;
+    width:160px;
+}
+
+.homeknop,.blogknop,.lexiconknop,.bronnenknop{
+    display:block;
+    width:160px;
+}
+
+.HOME,.BLOG,.LEXICON,.BRONNEN{
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translateX(-50%);
+    margin:20px 0 0;
+    font-family:"pixel_operator";
+    font-size:50px;
+    white-space:nowrap;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 0.3s ease;
+    color: black;
+}
+
+.menu li:hover p{
+    opacity:1;
+}
+
+.menu label{
+    display:block;
+    width:12.86vw;
+    height:24.11vw;
+    background:linear-gradient(#B52B89 5.05vw,#D5FFF5 0);
+    box-shadow:0.62vw 0.62vw 1.56vw #0006;
+    cursor:pointer;
+}
+
+.menu label::before{
+    content:"MENU";
+    display:block;
+    margin-left:2.45vw;
+    font:900 2.29vw/5.05vw "Arial Black",Arial,sans-serif;
+}
+
+.pijlen{
+    display:block;
+    width:6.09vw;
+    margin:4.95vw 0 0 3.39vw;
+}
+
+#menu_openen:checked ~ .menubalk{
+    display:block;
+}
+
+#menu_openen:checked ~ ul{
+    display:flex;
+}
+
+#menu_openen:checked ~ label{
+    position:absolute;
+    top:110px;
+    left:1200px;
+    width:160px;
+    height:auto;
+    background:none;
+    box-shadow:none;
+}
+
+#menu_openen:checked ~ label::before{
+    display:none;
+}
+
+#menu_openen:checked ~ label .pijlen{
+    width:160px;
+    margin:0;
+    transform:rotate(180deg);
+}
+
+/* ---------- blog + lexicon ---------- */
+
+.blogpagina,.lexiconpagina{
+    padding-top:393px;
+    color:#18145E;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.blogpagina{
+    background-color:#F7962F;
+}
+
+.lexiconpagina{
+    background-color:#C3CF3F;
+}
+
+.BOVEN{
+    display:block;
+    margin:40px;
+    text-align:center;
+    font:20px pixel_operator;
+}
+
+.muis1{
+    width:70px;
+    vertical-align:middle;
+}
+
+footer{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    height:200px;
+    margin-top:50px;
+    padding-left:220px;
+    background-color:#B42B89;
+}
+
+footer img{
+    width:500px;
+}
+
+/* ---------- blog ---------- */
+
+.titelblog{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px 0 100px;
+}
+
+.JOUWWAKKER{
+    font-size:120px;
+}
+
+.CREATIVITEIT{
+    display:block;
+    font-weight:400;
+}
+
+.hand{
+    width:20%;
+}
+
+.introblog{
+    display:grid;
+    gap:80px;
+    margin:100px 100px 0;
+}
+
+.intro1,.intro2{
+    margin:0;
+    font-size:20px;
+}
+
+.blogtekst1,.blogtekst2{
+    display:flex;
+    align-items:start;
+    margin:100px 50px 0;
+}
+
+.blogtekst1{
+    gap:42px;
+}
+
+.vak1blog{
+    width:1000px;
+    padding:0 70px 0 30px;
+    background-image:url("afbeeldingen web/terquoise.png");
+}
+
+.internetencrea{
+    font-size:50px;
+    margin:40px 0 48px 10px;
+}
+
+.tekst1blog{
+    font-size:20px;
+    margin:0;
+}
+
+.creabar{
+    width:220px;
+    margin-top:100px;
+}
+
+.blogtekst2{
+    gap:134px;
+}
+
+.breinblok{
+    display:grid;
+    gap:40px;
+    width:200px;
+}
+
+.brein{
+    width:200px;
+}
+
+.blah1,.blah2,.blah3{
+    font-family:"pixel_operator";
+    margin:0;
+}
+
+.blah1{
+    font-size:40px;
+    margin-left:110px;
+}
+
+.blah2{
+    font-size:30px;
+    margin-left:20px;
+}
+
+.blah3{
+    font-size:20px;
+    margin-left:100px;
+}
+
+.lime{
+    width:900px;
+    margin-top:50px;
+    padding:35px 54px 0 26px;
+    background-image:url("afbeeldingen web/lime.png");
+}
+
+.nietminder{
+    width:400px;
+    font-size:30px;
+    margin:0;
+}
+
+.tekst2blog1,.tekst2blog2,.tekst2blog3{
+    font-size:18px;
+    margin:33px 0 0;
+}
+
+/* ---------- lexicon ---------- */
+
+.titellexicon{
+    padding-left:30px;
+}
+
+.EEN{
+    font-size:120px;
+}
+
+.lexicontekst{
+    display:flex;
+    align-items:start;
+    margin: 30px;
+}
+
+.titelslexicon{
+    font-size:15px;
+    margin-left:40px;
+}
+
+.tekstlexicon{
+    font-size:13px;
+    width:800px;
+    margin-left:40px;
+}
+
+.donkerblauwtekstvak{
+    width:30%;
+    margin:50px 0 0 auto;
+}
+
+/* ---------- bronnen ---------- */
+/* ontworpen op 1920px breed: 1vw = 19,2px uit het ontwerp, dus de pagina past altijd op het scherm */
+
+.bronnenpagina{
+    margin:0;
+    background-color:#C79FDD;
+    color:#18145E;
+    font-family:pixel_operator;
+}
+
+.titelbronnen{
+    display:flex;
+    align-items:center;
+    gap:1.82vw;
+    margin:6.88vw 0 0 16.51vw;
+    font-size:10.36vw;
+    line-height:1;
+    color:#B52B89;
+}
+
+.sterlinks,.sterrechts{
+    width:4.79vw;
+}
+
+.headerbronnen{
+    display:flex;
+    align-items:start;
+    gap:5.1vw;
+    margin-top:6.46vw;
+    padding-left:6.77vw;
+}
+
+.film{
+    width:14.84vw;
+    margin-top:5.16vw;
+}
+
+.oranje1,.oranje2{
+    display:flex;
+    flex-direction:column;
+    box-sizing:border-box;
+    width:27.55vw;
+    aspect-ratio:1;
+    padding:0 2.76vw 0 1.56vw;
+    background:url("afbeeldingen web/textoranje.png") center/100% 100% no-repeat;
+}
+
+.oranje2{
+    margin-top:4.74vw;
+}
+
+.videotitel,.documentairetitel{
+    margin:50px 0 0;
+    font-size:20px;
+    line-height:1.25vw;
+}
+
+.tekstbronnen1,.tekstbronnen2{
+    margin:5vw 0 0;
+    font-size:1.04vw;
+    line-height:0.99vw;
+}
+
+.klik1,.klik2{
+    margin:auto 0 2.45vw;
+    font-size:0.68vw;
+    text-align:center;
+    text-decoration:underline;
+}
+
+.podcastbronnen{
+    display:flex;
+    align-items:start;
+    gap:4.74vw;
+    margin-top:4.53vw;
+    padding-left:8.8vw;
+}
+
+.podcastvenster{
+    display:flex;
+    flex-direction:column;
+    box-sizing:border-box;
+    width:54.79vw;
+    aspect-ratio:2324/1577;
+    padding:0 4.43vw;
+    background:url("afbeeldingen web/lichtblauw.png") center/100% 100% no-repeat;
+}
+
+.podcasttitel{
+    margin:2.92vw 0 3.59vw;
+    font-size:1.82vw;
+    line-height:2.08vw;
+}
+
+.tekstpodcast1,.tekstpodcast2{
+    margin:0 0 1.56vw;
+    font-size:0.83vw;
+    line-height:1.61vw;
+}
+
+.klik3{
+    margin:auto 0 3.85vw;
+    font-size:0.91vw;
+    text-align:center;
+    text-decoration:underline;
+}
+
+.mic{
+    width:20.31vw;
+    margin-top:8.44vw;
+    transform:rotate(15deg);
+}
+
+.liedjes{
+    display:grid;
+    grid-template-columns:repeat(3,22.5vw);
+    justify-content:center;
+    column-gap:4.74vw;
+    margin-top:7.76vw;
+    text-align:center;
+}
+
+.liedjestitel{
+    grid-column:1/-1;
+    margin:0;
+    font-size:1.67vw;
+    line-height:2.08vw;
+}
+
+.liedjestekst{
+    grid-column:1/-1;
+    margin:0.62vw 0 1.2vw;
+    font-size:1.25vw;
+    line-height:1.25vw;
+}
+
+.album1,.album2,.album3{
+    aspect-ratio:1;
+    text-align:left;
+    background-position:center;
+    background-size:100%;
+    background-repeat:no-repeat;
+}
+
+.album1{
+    background-image:url("afbeeldingen web/lppaars.png");
+}
+
+.album2{
+    background-image:url("afbeeldingen web/lproze.png");
+}
+
+.album3{
+    background-image:url("afbeeldingen web/lporanje.png");
+}
+
+.albumtitel{
+    margin:3.02vw 0 0 0.94vw;
+    font-size:0.99vw;
+    line-height:1.25vw;
+}
+
+.cover{
+    display:block;
+    width:15.05vw;
+    margin:1.15vw 0 0 0.47vw;
+}
+
+.bovenbronnen{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2.29vw;
+    margin-top:5.26vw;
+    font-size:1.04vw;
+}
+
+.cursor1,.cursor2{
+    width:4.95vw;
+}
+
+.cursor1{
+    transform:rotate(130deg);
+}
+
+.cursor2{
+    transform:scaleX(-1) rotate(130deg);
+}
+
+.footerbronnen{
+    align-items:start;
+    gap:4.06vw;
+    height:11.35vw;
+    margin:3.49vw 0 3.02vw;
+    padding-left:10.16vw;
+}
+
+.balkbronnen{
+    width:40.16vw;
+}
